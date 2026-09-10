@@ -50,15 +50,20 @@ Desempenho no conjunto de teste (14.000 imagens):
 
 | Modelo | Acurácia | Precisão | Recall | F1-Score | Tempo de treino |
 |---|---|---|---|---|---|
-| Random Forest | 96,52% | 96,53% | 96,52% | 96,52% | 7,9 s |
-| KNN | 97,21% | 97,24% | 97,21% | 97,21% | 5,9 s |
-| **MLP (Rede Neural)** | **97,49%** | **97,51%** | **97,49%** | **97,49%** | 13,7 s |
+| Random Forest | 96,52% | 96,53% | 96,52% | 96,52% | ~8 s |
+| **KNN** | **97,21%** | **97,24%** | **97,21%** | **97,21%** | ~6 s |
+| MLP (Rede Neural) | 97,14% | 97,16% | 97,14% | 97,13% | ~15 s |
 
 Destaques do estudo:
-- O **melhor modelo foi a MLP** (97,49%), seguida de perto pelo KNN e pela Random Forest.
-- O **par de dígitos mais confundido** foi **4 → 9** (traços parecidos).
+- No *benchmark*, o **KNN teve a maior acurácia** (97,21%), seguido de perto pela MLP (97,14%) e pela
+  Random Forest (96,52%).
+- Para reconhecer **dígitos manuscritos próprios** (Fase 5.3), o projeto usa a **MLP**: mesmo com
+  acurácia um pouco menor no teste, a rede neural **generaliza melhor** para caligrafias novas do que
+  o KNN (que apenas memoriza o treino). É a diferença entre *"melhor no benchmark"* e *"melhor no
+  mundo real"* — e o modelo reconhece corretamente o dígito manuscrito de exemplo.
+- O **par de dígitos mais confundido** foi **4 e 9** (traços parecidos).
 - O **Desafio B (OOD)** demonstra a **"falsa certeza"**: escondendo os dígitos **4 e 7** do treino,
-  o modelo empurra ~66% deles para o dígito **9** — e com **91% de confiança média**. Ou seja,
+  o modelo empurra a maioria (~64%) para o dígito **9** — e com **91,6% de confiança média**. Ou seja,
   **erra com convicção** diante de dados que nunca viu (risco real de IA em produção).
 
 _Tabela completa em `outputs/tabela_comparativa.csv`; matrizes de confusão e gráficos em `outputs/graficos/`._
