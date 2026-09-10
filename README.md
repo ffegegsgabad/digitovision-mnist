@@ -1,13 +1,13 @@
-# 🔢 DígitoVision — Reconhecimento de Dígitos Manuscritos (MNIST)
+# DígitoVision — Reconhecimento de Dígitos Manuscritos (MNIST)
 
 Projeto do **Mini-Projeto Avaliativo do Módulo 2** — curso *Desenvolvimento de IA para Análise
 Preditiva [T1]* (SCTEC). Autor: **Rian Gomes**.
 
-> 🎥 **Vídeo de apresentação:** _(link do Google Drive a inserir)_
+> **Vídeo de apresentação:** _(link do Google Drive a inserir)_
 
 ---
 
-## 🎯 Qual problema o sistema resolve?
+## Qual problema o sistema resolve?
 
 **DígitoVision** é um pipeline de Machine Learning ponta a ponta que reconhece **dígitos
 manuscritos (0 a 9)** a partir de imagens. Ele usa o dataset clássico de Visão Computacional
@@ -19,7 +19,7 @@ manuscritos (0 a 9)** a partir de imagens. Ele usa o dataset clássico de Visão
 
 É a base de aplicações reais como leitura automática de CEP, cheques, formulários e provas.
 
-## 🧠 Técnicas e tecnologias utilizadas
+## Técnicas e tecnologias utilizadas
 
 | Categoria | Ferramentas |
 |---|---|
@@ -44,7 +44,7 @@ pipeline de pré-processamento de imagens (escala de cinza, inversão, *bounding
 | **KNN** | Clássico (baseado em distância) | `n_neighbors=3`, `weights='distance'` |
 | **MLP** | Rede Neural (Keras) | arquitetura `128→64`, `learning_rate=0.001`, `epochs=15` |
 
-## 📊 Resultados (resumo)
+## Resultados (resumo)
 
 Desempenho no conjunto de teste (14.000 imagens):
 
@@ -63,7 +63,7 @@ Destaques do estudo:
 
 _Tabela completa em `outputs/tabela_comparativa.csv`; matrizes de confusão e gráficos em `outputs/graficos/`._
 
-## 🗂️ Estrutura do projeto
+## Estrutura do projeto
 
 ```
 digitovision-mnist/
@@ -79,7 +79,7 @@ digitovision-mnist/
 └── README.md
 ```
 
-## ▶️ Como executar
+## Como executar
 
 ```bash
 # 1. Clonar o repositório
@@ -104,7 +104,7 @@ Depois, basta **executar as células na ordem** (menu *Run → Run All Cells*). 
 > (ou desenhe no Paint com fundo **preto** e traço **branco**), salve as fotos em
 > `data/meus_digitos/` e rode a Fase 5.3.
 
-## 🌱 Estrutura de branches (Git)
+## Estrutura de branches (Git)
 
 | Branch | Objetivo |
 |---|---|
@@ -118,7 +118,7 @@ Depois, basta **executar as células na ordem** (menu *Run → Run All Cells*). 
 | `feat/imagens-proprias` | Fase 5.3 — Inferência com imagem própria |
 | `docs/readme` | Documentação |
 
-## 🔧 Melhorias futuras
+## Melhorias futuras
 
 - Implementar uma **CNN** (rede convolucional) — "vê o contexto" e tende a superar a MLP em imagens;
 - **Busca de hiperparâmetros** (GridSearch/RandomSearch) em vez de valores fixos;
