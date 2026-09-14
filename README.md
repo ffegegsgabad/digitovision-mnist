@@ -3,7 +3,7 @@
 Projeto do **Mini-Projeto Avaliativo do Módulo 2** — curso *Desenvolvimento de IA para Análise
 Preditiva [T1]* (SCTEC). Autor: **Rian Gomes**.
 
-> **Vídeo de apresentação:** _(link do Google Drive a inserir)_
+> **Vídeo de apresentação:** [Assistir no Google Drive](https://drive.google.com/drive/folders/1XKM58vIcCOOaypbfbcZDAOfIsaihAhOv?usp=sharing)
 
 ---
 
